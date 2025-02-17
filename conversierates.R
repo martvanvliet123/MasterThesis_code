@@ -1,5 +1,5 @@
-# Lijst van conversierates
-dropout <- 0.00             #mensen die niet naar OK moeten na poli
-conversierate_poli <- 0.00  #mensen die van poli rechtstreeks naar hosp gaan
-conversierate_surg <- 1.00  #mensen die van poli naar OK moeten
-conversierate_po_po <- 0.00   #mensen die na poli nog een poli moeten
+# List of conversion rates
+dropout <- 0.00             # Patients who do not need surgery after the outpatient clinic
+conversion_rate_poli <- 0.00  # Patients who go directly from the outpatient clinic to hospitalization
+conversion_rate_surg <- 1.00  # Patients who require surgery after the outpatient clinic
+conversion_rate_po_po <- 0.00   # Patients who need another outpatient clinic visit after the first one
