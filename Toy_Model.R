@@ -18,7 +18,7 @@ initial_hosp_patients <- 12
 length_of_stay <- 2 # weeks
 
 # Load conversion rates
-source("C:/Users/m.vanvliet/OneDrive - Performation Healthcare Intelligence BV/Documenten/Testen/conversierates.R")
+source("C:/.../conversierates.R")
 
 # Number of patients arriving each week
 new_patients_per_week <- data.frame(week = seq(1, model_duration, by = 1), new = rep(6, times = model_duration))

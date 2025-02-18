@@ -14,7 +14,7 @@ library(purrr)
 
 ## WITH WHAT PERCENTAGE OF THE DATA ARE WE WORKING WITH WHEN MINIMUM > 2, AND OTHER NUMBERS?? ELBOW PLOT??
 # Loading data ------------------------------------------------------------
-conv_data <- read_excel("C:/Users/m.vanvliet/OneDrive - Performation Healthcare Intelligence BV/Documenten/Data Dijklander/PC_export_.xlsx")
+conv_data <- read_excel("C:/.../PC_export_.xlsx")
 conv_data <- data.frame(Specialism = conv_data$Capaciteitstype, Consultcode = conv_data$`Consultcode / Opname type`, Department = conv_data$Entiteit, Appointments = conv_data$Aantallen)
 # Appointments is aantal afspraken, operaties of opnames
 # Only keep interesting data (with at least one week in which they have more than two appointments)

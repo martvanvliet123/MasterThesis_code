@@ -13,7 +13,7 @@ library(plotly)
 
 # Loading data ------------------------------------------------------------
 # Import the PC input from Dijklander Ziekenhuizen
-data <- read_excel("C:/Users/m.vanvliet/OneDrive - Performation Healthcare Intelligence BV/Documenten/Data Dijklander/PC_export_.xlsx")
+data <- read_excel("C:/.../PC_export_.xlsx")
 # We will be doing all calculations on weekly level, so we will only need the Week variable.
 # Furthermore, we concatenate the Capacitytype, Entity and ConsultCode into one label, called Specialism.
 data <- data %>%
@@ -31,7 +31,7 @@ code <- "H"
 # Check if specialism is in data
 # Reasons if it's not: Typo in the three variables above, or not significant (no week with more than two appointments planned)
 # Read out the Rscript that contains the conversion table
-source("C:/Users/m.vanvliet/OneDrive - Performation Healthcare Intelligence BV/Documenten/The Model/Conversion_table.R")
+source("C:/.../Conversion_table.R")
 # Find conversion rows for the SPECs
 specs_found <- grepl(paste(spec, ".*", department, ".*", code, sep = ""), rownames(conv_rates))
 # Find the names that are part of the SPECs (so for INT - arts, this would be INT - arts - P and INT - arts - H)
